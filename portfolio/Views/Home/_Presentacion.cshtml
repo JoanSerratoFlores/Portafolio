@@ -1,0 +1,54 @@
+﻿@*@model Persona*@
+
+@*@{
+    string ConvertirEnMayusculas(string valor)
+    {
+        return valor.ToUpper() + "zzz";
+    }
+    DateTime hoy = DateTime.Now;
+    var nombres = new List<string>() { "Felipe", "Claudia", "Roberto" };
+}*@
+
+
+
+<div class="text-center">
+
+@*    <ul>
+    @foreach(var nombre in nombres)
+    {
+    <li>
+    @nombre
+    </li>
+    }
+    </ul>
+    <h1 class="display-4">Soy @ConvertirEnMayusculas(Model.Nombre) (@Model.Edad)</h1>
+    <h4> @hoy.ToString("dd/MM/yyyy hh:mm:ss tt")</h4>
+
+    @if (Model.Edad >= 18)
+    {
+    <h4>Eres mayor de edad! Puedes pasar <button>Entrar</button> </h4>
+    }
+    else
+    {
+    <h4>Eres menor! Largate</h4>
+    }   *@
+
+
+    <h1 class="display-4">Soy Joan Emanuele Serrato Flores</h1>
+    <h2>Soy un desarrollador de software especializado en tecnologias .NET y Javascript</h2>
+    <img id="foto" src="~/imagenes/foto.png" alt="Foto de Felipe">
+</div>
+
+<div class="text-center">
+    <img id="imagen-dotnet" src="~/imagenes/png-clipart-microsoft-visual-studio-visual-basic-computer-software-net-framework-studio-purple-studio.png" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h1>Te doy la bienvenida a mi portafolio</h1>
+        <p>
+            Esta carta es para expresar mi interés en su publicación en dice.com para un desarrollador de software experimentado. Con una licenciatura en ciencias de la computación, una maestría en tecnología de la información y experiencia práctica en el uso de lenguajes .net para crear e implementar aplicaciones de software, estoy seguro de que seré un activo para su organización.
+        </p>
+    </div>
+
+</div>
